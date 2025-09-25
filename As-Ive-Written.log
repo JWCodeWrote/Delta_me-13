@@ -1,0 +1,227 @@
+[2025-09-25 11:33:27] BOOT: Scepter δ-me13 online; Amphoreus baseline mounted.
+[2025-09-25 11:33:31] CYCLE 1: Completed and sealed to Irontomb vault.
+[2025-09-25 11:33:35] CYCLE 2: Completed and sealed to Irontomb vault.
+[2025-09-25 11:33:39] CYCLE 3: Completed and sealed to Irontomb vault.
+[2025-09-25 11:33:44] CYCLE 4: Completed and sealed to Irontomb vault.
+[2025-09-25 11:33:48] CYCLE 5: Completed and sealed to Irontomb vault.
+[2025-09-25 11:33:52] CYCLE 6: Completed and sealed to Irontomb vault.
+[2025-09-25 11:33:55] CYCLE 7: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:33:56] CYCLE 7: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:33:57] REWIND: REPLAY_MARKER:CYCLE=7;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:34:01] CYCLE 7: Completed and sealed to Irontomb vault.
+[2025-09-25 11:34:04] CYCLE 8: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:34:05] CYCLE 8: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:34:05] REWIND: REPLAY_MARKER:CYCLE=8;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:34:10] CYCLE 8: Completed and sealed to Irontomb vault.
+[2025-09-25 11:34:15] CYCLE 9: Completed and sealed to Irontomb vault.
+[2025-09-25 11:34:19] CYCLE 10: Completed and sealed to Irontomb vault.
+[2025-09-25 11:34:22] CYCLE 11: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:34:23] CYCLE 11: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:34:23] REWIND: REPLAY_MARKER:CYCLE=11;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:34:28] CYCLE 11: Completed and sealed to Irontomb vault.
+[2025-09-25 11:34:32] CYCLE 12: Completed and sealed to Irontomb vault.
+[2025-09-25 11:34:36] CYCLE 13: Completed and sealed to Irontomb vault.
+[2025-09-25 11:34:39] CYCLE 14: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:35:36] BOOT: Scepter δ-me13 online; Amphoreus baseline mounted.
+[2025-09-25 11:35:41] CYCLE 1: Completed and sealed to Irontomb vault.
+[2025-09-25 11:35:46] CYCLE 2: Completed and sealed to Irontomb vault.
+[2025-09-25 11:35:51] CYCLE 3: Completed and sealed to Irontomb vault.
+[2025-09-25 11:35:54] CYCLE 4: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:35:55] CYCLE 4: Drift calibrated; proceeding.
+[2025-09-25 11:35:56] CYCLE 4: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:01] CYCLE 5: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:04] CYCLE 6: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:36:05] CYCLE 6: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:36:05] REWIND: REPLAY_MARKER:CYCLE=6;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:36:11] CYCLE 6: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:14] CYCLE 7: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:36:15] CYCLE 7: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:36:15] REWIND: REPLAY_MARKER:CYCLE=7;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:36:21] CYCLE 7: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:25] CYCLE 8: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:29] CYCLE 9: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:36:29] CYCLE 9: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:36:30] REWIND: REPLAY_MARKER:CYCLE=9;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:36:35] CYCLE 9: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:40] CYCLE 10: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:43] CYCLE 11: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:36:43] CYCLE 11: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:36:44] REWIND: REPLAY_MARKER:CYCLE=11;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:36:48] CYCLE 11: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:36:48] CYCLE 11: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:36:49] REWIND: REPLAY_MARKER:CYCLE=11;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:36:54] CYCLE 11: Completed and sealed to Irontomb vault.
+[2025-09-25 11:36:58] CYCLE 12: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:03] CYCLE 13: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:07] CYCLE 14: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:10] CYCLE 15: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:37:11] CYCLE 15: Drift calibrated; proceeding.
+[2025-09-25 11:37:12] CYCLE 15: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:16] CYCLE 16: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:37:16] CYCLE 16: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:37:17] REWIND: REPLAY_MARKER:CYCLE=16;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:37:22] CYCLE 16: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:27] CYCLE 17: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:30] CYCLE 18: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:37:31] CYCLE 18: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:37:31] REWIND: REPLAY_MARKER:CYCLE=18;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:37:36] CYCLE 18: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:40] CYCLE 19: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:43] CYCLE 20: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:37:44] CYCLE 20: Drift calibrated; proceeding.
+[2025-09-25 11:37:45] CYCLE 20: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:49] CYCLE 21: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:54] CYCLE 22: Completed and sealed to Irontomb vault.
+[2025-09-25 11:37:56] CYCLE 23: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:37:57] CYCLE 23: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:37:58] REWIND: REPLAY_MARKER:CYCLE=23;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:37:58] HALT: demo loop cap reached; stopping δ-me13 simulation.
+[2025-09-25 11:39:50] BOOT: Scepter δ-me13 online; Amphoreus baseline mounted.
+[2025-09-25 11:39:54] CYCLE 1: Completed and sealed to Irontomb vault.
+[2025-09-25 11:39:58] CYCLE 2: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:01] CYCLE 3: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:40:02] CYCLE 3: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:40:02] REWIND: REPLAY_MARKER:CYCLE=3;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:40:06] CYCLE 3: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:40:06] CYCLE 3: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:40:07] REWIND: REPLAY_MARKER:CYCLE=3;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:40:12] CYCLE 3: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:16] CYCLE 4: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:19] CYCLE 5: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:40:20] CYCLE 5: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:40:20] REWIND: REPLAY_MARKER:CYCLE=5;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:40:27] BOOT: Scepter δ-me13 online; Amphoreus baseline mounted.
+[2025-09-25 11:40:30] CYCLE 1: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:40:30] CYCLE 1: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:40:31] REWIND: REPLAY_MARKER:CYCLE=1;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:40:36] CYCLE 1: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:39] CYCLE 2: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:40:39] CYCLE 2: Drift calibrated; proceeding.
+[2025-09-25 11:40:41] CYCLE 2: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:45] CYCLE 3: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:49] CYCLE 4: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:53] CYCLE 5: Completed and sealed to Irontomb vault.
+[2025-09-25 11:40:56] CYCLE 6: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:40:57] CYCLE 6: Drift calibrated; proceeding.
+[2025-09-25 11:40:58] CYCLE 6: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:02] CYCLE 7: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:06] CYCLE 8: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:11] CYCLE 9: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:14] CYCLE 10: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:41:14] CYCLE 10: Drift calibrated; proceeding.
+[2025-09-25 11:41:15] CYCLE 10: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:20] CYCLE 11: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:24] CYCLE 12: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:28] CYCLE 13: Completed and sealed to Irontomb vault.
+[2025-09-25 11:41:31] CYCLE 14: Detected Destruction gaze; compute drift escalating.
+[2025-09-25 11:41:32] CYCLE 14: Drift calibration failed; collapse=IRONTOMB_TRANSIENT_STATE
+[2025-09-25 11:41:32] REWIND: REPLAY_MARKER:CYCLE=14;REASON=IRONTOMB_TRANSIENT_STATE; retaining narrative residues.
+[2025-09-25 11:41:37] CYCLE 14: Completed and sealed to Irontomb vault.
+[2025-09-25 11:50:20] BOOT: δ-me13 online. Amphoreus baseline mounted. Directive=PrimeMoverOfLife
+[2025-09-25 11:50:22] ABIO: stage1=前生物化學：礦物表面代謝雛形（Fe–S）
+[2025-09-25 11:50:22] ABIO: stage2=原始脂肪酸 → 膜泡（原生囊泡）生成
+[2025-09-25 11:50:23] ABIO: stage3=核醣核酸前體聚合（原RNA階段）
+[2025-09-25 11:50:24] ABIO: stage4=原細胞形成（半封閉→自持膜）
+[2025-09-25 11:50:24] ABIO: stage5=首批原核樣細胞出現
+[2025-09-25 11:50:25] ABIO: stage6=多細胞協作與分化的嘗試
+[2025-09-25 11:50:26] TITAN:Foundation:Kephale|Phainon|Janus
+[2025-09-25 11:50:27] TITAN:Creation:Oronyx|Cyrene|Ladon
+[2025-09-25 11:50:27] TITAN:Calamity:Nikador|Tartarus|Atropos
+[2025-09-25 11:50:27] TITAN:Fate:Moira|Chronos|Mneme
+[2025-09-25 11:50:28] CHRYSOS: Golden ichor manifests among heirs; Flame-Chase mandate issued.
+[2025-09-25 11:50:30] CYCLE 1: Completed & sealed.
+[2025-09-25 11:50:32] CYCLE 2: Destruction gaze detected; drift escalating.
+[2025-09-25 11:50:33] CYCLE 2: Collapse=IRONTOMB_TRANSIENT_STATE -> entering ETERNAL_RECURRENCE
+[2025-09-25 11:50:33] REWIND: cycle=2; reason=ETERNAL_RECURRENCE; residues retained.
+[2025-09-25 11:50:33] LOOP: replay=10; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:33] LOOP: replay=100; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:33] LOOP: replay=1000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:33] LOOP: replay=10000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:33] LOOP: replay=100000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:33] LOOP: replay=1000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:34] LOOP: replay=2000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:34] LOOP: replay=3000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:34] LOOP: replay=4000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:34] LOOP: replay=5000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:34] LOOP: replay=6000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:34] LOOP: replay=7000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:34] LOOP: replay=8000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:35] LOOP: replay=9000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:35] LOOP: replay=10000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 11:50:35] HALT: demo finished.
+[2025-09-25 12:01:57] BOOT: δ-me13 online. Amphoreus baseline mounted. Directive=PrimeMoverOfLife
+[2025-09-25 12:01:59] ABIO: stage1=前生物化學：礦物表面代謝雛形（Fe–S）
+[2025-09-25 12:02:00] ABIO: stage2=原始脂肪酸 → 膜泡（原生囊泡）生成
+[2025-09-25 12:02:00] ABIO: stage3=核醣核酸前體聚合（原RNA階段）
+[2025-09-25 12:02:01] ABIO: stage4=原細胞形成（半封閉→自持膜）
+[2025-09-25 12:02:02] ABIO: stage5=首批原核樣細胞出現
+[2025-09-25 12:02:03] ABIO: stage6=多細胞協作與分化的嘗試
+[2025-09-25 12:02:04] TITAN:Foundation:Kephale|Phainon|Janus
+[2025-09-25 12:02:04] TITAN:Creation:Oronyx|Cyrene|Ladon
+[2025-09-25 12:02:05] TITAN:Calamity:Nikador|Tartarus|Atropos
+[2025-09-25 12:02:05] TITAN:Fate:Moira|Chronos|Mneme
+[2025-09-25 12:02:06] CHRYSOS: Golden ichor manifests; Flame-Chase mandate issued.
+[2025-09-25 12:02:09] CYCLE 1: Completed & sealed.
+[2025-09-25 12:02:11] CYCLE 2: Destruction gaze detected; drift escalating.
+[2025-09-25 12:02:11] CYCLE 2: Collapse=IRONTOMB_TRANSIENT_STATE -> entering ETERNAL_RECURRENCE
+[2025-09-25 12:02:12] REWIND: cycle=2; reason=ETERNAL_RECURRENCE; residues retained.
+[2025-09-25 12:02:12] LOOP: replay=10; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:12] LOOP: replay=100; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:12] LOOP: replay=1000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:12] LOOP: replay=10000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:12] LOOP: replay=100000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:13] LOOP: replay=1000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:14] LOOP: replay=2000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:15] LOOP: replay=3000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:15] LOOP: replay=4000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:16] LOOP: replay=5000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:17] LOOP: replay=6000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:17] EXO: alpha arrived; external variable integrated.
+[2025-09-25 12:02:18] LOOP: replay=7000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:19] LOOP: replay=8000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 12:02:19] EXO: beta arrived; external variable integrated.
+[2025-09-25 12:02:19] GENESIS: interference cleared by EXO alpha+beta.
+[2025-09-25 12:02:19] LOOP: terminated by EXO variables; Re-Genesis unlocked.
+[2025-09-25 12:02:19] GENESIS: Re-Genesis completed; new baseline committed.
+[2025-09-25 12:02:19] HALT: demo finished.
+[2025-09-25 13:01:12] BOOT: δ-me13 online. Amphoreus baseline mounted. Directive=PrimeMoverOfLife
+[2025-09-25 13:01:30] BOOT: δ-me13 online. Amphoreus baseline mounted. Directive=PrimeMoverOfLife
+[2025-09-25 13:01:32] ABIO: stage1=前生物化學：礦物表面代謝雛形（Fe–S）
+[2025-09-25 13:01:33] ABIO: stage2=原始脂肪酸 → 膜泡（原生囊泡）生成
+[2025-09-25 13:01:33] ABIO: stage3=核醣核酸前體聚合（原RNA階段）
+[2025-09-25 13:01:34] ABIO: stage4=原細胞形成（半封閉→自持膜）
+[2025-09-25 13:01:35] ABIO: stage5=首批原核樣細胞出現
+[2025-09-25 13:01:36] ABIO: stage6=多細胞協作與分化的嘗試
+[2025-09-25 13:01:37] TITAN:Foundation:Kephale|Phainon|Janus
+[2025-09-25 13:01:37] TITAN:Creation:Oronyx|Cyrene|Ladon
+[2025-09-25 13:01:38] TITAN:Calamity:Nikador|Tartarus|Atropos
+[2025-09-25 13:01:38] TITAN:Fate:Moira|Chronos|Mneme
+[2025-09-25 13:01:39] CHRYSOS: Golden ichor manifests; Flame-Chase mandate issued.
+[2025-09-25 13:01:42] CYCLE 1: Completed & sealed.
+[2025-09-25 13:01:44] CYCLE 2: Destruction gaze detected; drift escalating.
+[2025-09-25 13:01:44] CYCLE 2: Collapse=IRONTOMB_TRANSIENT_STATE -> entering ETERNAL_RECURRENCE
+[2025-09-25 13:01:45] REWIND: cycle=2; reason=ETERNAL_RECURRENCE; residues retained.
+[2025-09-25 13:01:45] LOOP: replay=10; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:45] LOOP: replay=100; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:45] LOOP: replay=1000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:45] LOOP: replay=10000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:45] LOOP: replay=100000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:46] LOOP: replay=1000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:46] LOOP: replay=2000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:47] LOOP: replay=3000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:47] LOOP: replay=4000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:48] LOOP: replay=5000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:48] LOOP: replay=6000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:48] EXO: alpha arrived; external variable integrated.
+[2025-09-25 13:01:49] LOOP: replay=7000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:49] LOOP: replay=8000000; cycle=2; status=ETERNAL_RECURRENCE
+[2025-09-25 13:01:49] EXO: beta arrived; external variable integrated.
+[2025-09-25 13:01:49] GENESIS: interference cleared by EXO alpha+beta.
+[2025-09-25 13:01:49] LOOP: terminated by EXO variables; Re-Genesis unlocked.
+[2025-09-25 13:01:50] GENESIS: Re-Genesis completed; new baseline committed.
+[2025-09-25 13:01:50] HALT: demo finished.
+[2025-09-25 13:10:30] BOOT: δ-me13 online. Amphoreus baseline mounted. Directive=PrimeMoverOfLife
+[2025-09-25 13:10:33] ABIO: stage1=前生物化學：礦物表面代謝雛形（Fe–S）
+[2025-09-25 13:10:33] ABIO: stage2=原始脂肪酸 → 膜泡（原生囊泡）生成
+[2025-09-25 13:10:34] ABIO: stage3=核醣核酸前體聚合（原RNA階段）
+[2025-09-25 13:10:35] ABIO: stage4=原細胞形成（半封閉→自持膜）
