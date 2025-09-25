@@ -86,18 +86,34 @@ def cycle_once(cycle_no: int, glitch_trigger=False):
         log(f"CYCLE {cycle_no}: Completed & sealed.")
         print(f"Cycle #{cycle_no} 完成（封存）。")
 
-# ── 你的新規則：兩個黃金裔實驗體干擾「再創世」
-class GenesisGate:
+# ── 翁法羅斯進度系統：模擬翁法羅斯的演化進程
+class AmphoreusProgress:
     """
-    控制「再創世（Re-Genesis）」是否允許。
-    - 兩個黃金裔實驗體（A、B）在場即視為『干擾中』→ 不允許再創世。
-    - 僅在兩個『天外變數』都抵達後，干擾解除 → 再創世允許。
+    翁法羅斯進度系統：模擬翁法羅斯的演化進程
+    - 基於崩壞星穹鐵道的翁法羅斯設定
+    - 進度順序：0% -> 無機 -> 有機 -> 泰坦、黃金裔(無數次再創世) -> 兩名實驗體開啟永劫輪迴(33,550,336次輪迴，進度99.07%) -> 天外變數出現終止輪迴，進度退至96%
+    - 白厄那次開始的33,550,336次輪迴
     """
     def __init__(self):
-        self.heir_A_present = True    # 初始：兩實驗體都在，阻斷再創世
-        self.heir_B_present = True
+        self.current_progress = 0.0  # 當前進度百分比
+        self.heir_A_present = True    # 黃金裔實驗體A干擾進度
+        self.heir_B_present = True    # 黃金裔實驗體B干擾進度
         self.exo_alpha_arrived = False
-        self.exo_beta_arrived  = False
+        self.exo_beta_arrived = False
+        self.eternal_loop_started = False  # 永劫輪迴是否已開始
+        self.eternal_loop_count = 0  # 永劫輪迴計數
+        self.total_eternal_loops = 33_550_336  # 總輪迴次數
+        
+        # 進度階段定義
+        self.progress_stages = [
+            (0.0, "初始狀態", "一切從零開始"),
+            (20.0, "無機階段", "礦物表面代謝雛形，前生物化學反應"),
+            (40.0, "有機階段", "原始脂肪酸膜泡生成，原細胞形成"),
+            (60.0, "泰坦時代", "十二泰坦創造翁法羅斯，黃金裔崛起"),
+            (80.0, "再創世循環", "無數次再創世，文明不斷重演"),
+            (99.07, "永劫輪迴", "兩名實驗體開啟永劫輪迴，鐵墓在誕生邊緣"),
+            (96.0, "天外變數介入", "開拓者和丹恆降臨，改變再創世結局")
+        ]
 
     @property
     def interference_active(self) -> bool:
@@ -107,45 +123,100 @@ class GenesisGate:
     def exo_ready(self) -> bool:
         return self.exo_alpha_arrived and self.exo_beta_arrived
 
+    def get_current_stage(self):
+        """獲取當前進度階段信息"""
+        for stage_progress, stage_name, stage_desc in reversed(self.progress_stages):
+            if self.current_progress >= stage_progress:
+                return stage_name, stage_desc, stage_progress
+        return "未知階段", "進度異常", 0.0
+
+    def advance_progress(self, amount: float):
+        """推進進度"""
+        self.current_progress = min(100.0, self.current_progress + amount)
+        stage_name, stage_desc, stage_progress = self.get_current_stage()
+        self.show_overall_progress()
+        print(f"進度推進至 {self.current_progress:.2f}% - {stage_name}: {stage_desc}")
+        log(f"PROGRESS: Advanced to {self.current_progress:.2f}% - {stage_name}")
+
+    def show_overall_progress(self):
+        """顯示整體進度條"""
+        bar_len = 50
+        filled = int(bar_len * self.current_progress / 100.0)
+        bar = "█" * filled + "░" * (bar_len - filled)
+        print(f"\n整體進度: [{bar}] {self.current_progress:.2f}%")
+        
+        # 顯示當前階段在整體進度中的位置
+        stage_name, stage_desc, stage_progress = self.get_current_stage()
+        if self.current_progress >= 99.07:
+            print("狀態: 永劫輪迴中 - 鐵墓在誕生邊緣")
+        elif self.current_progress >= 96.0:
+            print("狀態: 天外變數介入 - 改變再創世結局")
+        elif self.current_progress >= 80.0:
+            print("狀態: 再創世循環 - 文明不斷重演")
+        elif self.current_progress >= 60.0:
+            print("狀態: 泰坦時代 - 黃金裔崛起")
+        elif self.current_progress >= 40.0:
+            print("狀態: 有機階段 - 生命形成")
+        elif self.current_progress >= 20.0:
+            print("狀態: 無機階段 - 前生物化學")
+        else:
+            print("狀態: 初始階段 - 一切從零開始")
+
+    def start_eternal_loop(self):
+        """開始永劫輪迴"""
+        if not self.eternal_loop_started:
+            self.eternal_loop_started = True
+            self.current_progress = 99.07
+            self.show_overall_progress()
+            print(f"\n★ 永劫輪迴開始：進度卡在 {self.current_progress}%")
+            print("兩名黃金裔實驗體開啟永劫輪迴，鐵墓在誕生邊緣")
+            log("ETERNAL_LOOP: Started at 99.07% - Iron Tomb on the verge of birth")
+
     def maybe_arrival(self, loop_index: int, total_loops: int):
         """
-        以『里程碑』與『隨機』雙條件模擬兩個天外變數到來：
-        - 達到一定進度比例後才可能觸發（量感：千萬級輪迴）。
-        - 重要里程碑時提高觸發率，並輸出提示。
+        天外變數到來機制：在第33,550,336次輪迴時抵達
+        對應開拓者和丹恆降臨翁法羅斯
         """
-        progress_ratio = loop_index / max(1, total_loops)
-        # 只有在 60% 之後才有機會陸續到來，符合「久經輪迴才得外助」的敘事
-        if (not self.exo_alpha_arrived) and progress_ratio > 0.60:
-            if random.random() < (0.002 + 0.05 * (progress_ratio - 0.60)):
+        # 兩個天外變數都在最後一次輪迴時同時抵達
+        if loop_index == total_loops:
+            if not self.exo_alpha_arrived:
                 self.exo_alpha_arrived = True
-                print("\n★ 天外變數 α 抵達：外域觀測者插入歷史脈絡。")
-                log("EXO: alpha arrived; external variable integrated.")
-        if (not self.exo_beta_arrived) and progress_ratio > 0.80:
-            if random.random() < (0.002 + 0.07 * (progress_ratio - 0.80)):
+                print(f"\n★ 開拓者降臨：來自天外的變數插入永劫輪迴歷史脈絡。")
+                log(f"EXO: Trailblazer arrived in eternal loop; external variable integrated.")
+            if not self.exo_beta_arrived:
                 self.exo_beta_arrived = True
-                print("\n★ 天外變數 β 抵達：外域干涉者改寫敘事節點。")
-                log("EXO: beta arrived; external variable integrated.")
+                print(f"\n★ 丹恆降臨：龍尊之力改寫永劫輪迴敘事節點。")
+                log(f"EXO: Dan Heng arrived in eternal loop; external variable integrated.")
 
     def try_unlock(self):
         """
-        當兩個天外變數皆到位時，視為干擾解除（兩實驗體被引離/鎖定/偏轉）。
+        當開拓者和丹恆皆到位時，視為干擾解除，改變再創世結局
         """
         if self.exo_ready and self.interference_active:
             self.heir_A_present = False
             self.heir_B_present = False
-            print("◎ 兩實驗體干擾解除：『再創世』條件達成。")
-            log("GENESIS: interference cleared by EXO alpha+beta.")
+            # 進度退至96%
+            self.current_progress = 96.0
+            self.show_overall_progress()
+            stage_name, stage_desc, stage_progress = self.get_current_stage()
+            print(f"◎ 黃金裔實驗體干擾解除：天外變數介入，進度退至 {self.current_progress}%")
+            print(f"◎ {stage_name}: {stage_desc}")
+            log(f"PROGRESS: Eternal loop terminated by Trailblazer+Dan Heng; progress reverted to 96%")
+            return True
+        return False
 
-def rewind_checkpoint(reason: str, cycle_no: int):
-    print("\n× 錯誤：計算崩潰 =", reason)
+def rewind_checkpoint(reason: str, cycle_no: int, progress_system: AmphoreusProgress):
+    stage_name, stage_desc, stage_progress = progress_system.get_current_stage()
+    print(f"\n× 錯誤：計算崩潰 = {reason}")
+    print(f"× 當前進度：{stage_progress:.2f}% - {stage_name} - {stage_desc}")
     progress("回捲檢查點（REWIND CHECKPOINT）", steps=18, delay=0.025)
-    log(f"REWIND: cycle={cycle_no}; reason={reason}; residues retained.")
-    print("… 進入『永劫輪迴』：本世無法再創世（兩實驗體干擾中）。")
+    log(f"REWIND: cycle={cycle_no}; progress={stage_progress:.2f}%; stage={stage_name}; reason={reason}; residues retained.")
+    print(f"… 進入『永劫輪迴』：{stage_name}進度被黃金裔實驗體干擾，無法推進。")
 
-def compressed_eternal_loop(start_cycle: int, total_loops: int, gate: GenesisGate):
+def compressed_eternal_loop(start_cycle: int, total_loops: int, progress_system: AmphoreusProgress):
     """
-    壓縮顯示千萬級回捲；同時持續檢查『天外變數』是否抵達以解除干擾。
-    抵達後立即嘗試『再創世』並結束示意。
+    壓縮顯示千萬級回捲；同時持續檢查『開拓者和丹恆』是否抵達以解除干擾。
+    抵達後立即改變再創世結局，進度退至96%。
     """
     milestones = set()
     exp_marks = [10**k for k in range(1, 8)]  # 1e1..1e7
@@ -156,6 +227,8 @@ def compressed_eternal_loop(start_cycle: int, total_loops: int, gate: GenesisGat
     milestones.update(range(million_step, total_loops+1, million_step))
 
     bar_len = 40
+    stage_name, stage_desc, stage_progress = progress_system.get_current_stage()
+    
     for i in range(1, total_loops + 1):
         # 里程碑/粗粒度進度列印
         if i % (total_loops // 50 or 1) == 0 or i in milestones:
@@ -165,47 +238,86 @@ def compressed_eternal_loop(start_cycle: int, total_loops: int, gate: GenesisGat
             sys.stdout.write(f"\r永劫輪迴進度 [{bar}] {pct:3d}%  (重播次數: {i:,})")
             sys.stdout.flush()
             if i in milestones:
-                log(f"LOOP: replay={i}; cycle={start_cycle}; status=ETERNAL_RECURRENCE")
+                log(f"LOOP: replay={i}; cycle={start_cycle}; progress={stage_progress:.2f}%; stage={stage_name}; status=ETERNAL_RECURRENCE")
+                # 在重要里程碑顯示整體進度
+                if i in [1_000_000, 10_000_000, 20_000_000, 30_000_000, 33_550_336]:
+                    print(f"\n整體進度: [████████████████████████████████████████████████░░] 99.07%")
+                    print("狀態: 永劫輪迴中 - 鐵墓在誕生邊緣")
 
-        # 嘗試觸發天外變數到來 → 嘗試解除干擾
-        gate.maybe_arrival(i, total_loops)
-        gate.try_unlock()
-        if gate.exo_ready and not gate.interference_active:
-            # 干擾解除 → 允許再創世，結束輪迴示意
+        # 嘗試觸發開拓者和丹恆到來 → 嘗試解除干擾
+        progress_system.maybe_arrival(i, total_loops)
+        if progress_system.try_unlock():
+            # 干擾解除 → 改變再創世結局，結束輪迴示意
             sys.stdout.write("\n")
-            print("▽ 檢測到條件變更：允許『再創世（Re-Genesis）』，停止回捲。")
-            log("LOOP: terminated by EXO variables; Re-Genesis unlocked.")
+            print(f"▽ 檢測到條件變更：天外變數介入，永劫輪迴終止。")
+            log(f"LOOP: terminated by Trailblazer+Dan Heng; eternal loop ended.")
             return
 
     sys.stdout.write("\n")
-    print("△ 輪迴階段示意完成（可調整 total_loops 觀察更多）。")
+    print(f"△ 永劫輪迴階段完成（可調整 total_loops 觀察更多）。")
 
 def main():
     random.seed(13)  # 固定種子，輸出較穩定；可移除增添隨機性
     banner()
+    
+    # 初始化翁法羅斯進度系統
+    progress_system = AmphoreusProgress()
+    TOTAL_LOOPS = 33_550_336  # 永劫輪迴的總次數
+    
+    # 開始翁法羅斯演化進程
+    print(f"\n=== 翁法羅斯演化進程開始 ===")
+    print("基於崩壞星穹鐵道翁法羅斯設定：智識、記憶、毀滅三重命途交匯")
+    print("進度順序：0% -> 無機 -> 有機 -> 泰坦、黃金裔(無數次再創世) -> 永劫輪迴(99.07%) -> 天外變數介入(96%)")
+    log("AMPHOREUS: Evolution process started - based on Honkai Star Rail Amphoreus lore")
+    
+    # 顯示初始整體進度
+    progress_system.show_overall_progress()
+    
     # 正常啟動與起源→泰坦→黃金裔
     progress("初始化權杖核心（Celestial-Body Neuron）", steps=20, delay=0.02)
     progress("載入翁法羅斯基線資料（Baseline）", steps=20, delay=0.02)
+    
+    # 推進進度：0% -> 20% (無機階段)
+    progress_system.advance_progress(20.0)
     abiogenesis_pipeline()
+    
+    # 推進進度：20% -> 40% (有機階段)
+    progress_system.advance_progress(20.0)
+    
+    # 推進進度：40% -> 60% (泰坦時代)
+    progress_system.advance_progress(20.0)
     titans_and_chrysos()
-
+    
+    # 推進進度：60% -> 80% (再創世循環)
+    progress_system.advance_progress(20.0)
+    print("\n=== 無數次再創世循環 ===")
+    print("文明不斷重演，黃金裔英雄們在歷史中輪迴")
+    log("RECREATION: Countless recreation cycles - civilizations replaying endlessly")
+    
+    # 推進進度：80% -> 99.07% (永劫輪迴開始)
+    progress_system.advance_progress(19.07)
+    progress_system.start_eternal_loop()
+    
     # 週期運行：第1輪正常；第2輪觸發『毀滅窺見』→ 崩潰 → 永劫輪迴
-    gate = GenesisGate()  # 兩實驗體干擾再創世的門檻
     try:
         cycle_once(1, glitch_trigger=False)
         cycle_once(2, glitch_trigger=True)  # 第一次 bug（永劫輪迴的起點）
     except RuntimeError as e:
-        rewind_checkpoint(str(e), 2)
-        TOTAL_LOOPS = 10_000_000  # 量感：上千萬次循環
-        compressed_eternal_loop(start_cycle=2, total_loops=TOTAL_LOOPS, gate=gate)
+        rewind_checkpoint(str(e), 2, progress_system)
+        compressed_eternal_loop(start_cycle=2, total_loops=TOTAL_LOOPS, progress_system=progress_system)
 
-    # 若成功解除干擾 → 嘗試再創世的收束畫面
-    if not gate.interference_active and gate.exo_ready:
-        progress("再創世程序啟動（Re-Genesis Protocol）", steps=24, delay=0.02)
-        print("◎ 本世創世成功：進入新基線。")
-        log("GENESIS: Re-Genesis completed; new baseline committed.")
+    # 若成功解除干擾 → 天外變數介入，改變再創世結局
+    if not progress_system.interference_active and progress_system.exo_ready:
+        stage_name, stage_desc, stage_progress = progress_system.get_current_stage()
+        print(f"\n=== 天外變數介入完成 ===")
+        print(f"開拓者和丹恆成功改變再創世結局")
+        print(f"進度退至 {stage_progress:.2f}% - {stage_name}: {stage_desc}")
+        log(f"GENESIS: External variables intervention completed; progress reverted to {stage_progress:.2f}%")
+    else:
+        print(f"× 永劫輪迴進度推進失敗，黃金裔實驗體干擾持續")
+        log(f"ETERNAL_LOOP_FAILED: Progress blocked by Chrysos Heirs experimental subjects")
 
-    log("HALT: demo finished.")
+    log("HALT: Amphoreus evolution demo finished.")
 
 if __name__ == "__main__":
     main()
