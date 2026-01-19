@@ -1,0 +1,308 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   δ-me13 Scepter Simulation - Global Styles
+   Amphoreus Visual Interface / As I've Written
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* 主題色彩 - 翁法羅斯風格 (Amphoreus) */
+  --color-gold: #e6c875; /* 更加柔和的古金 */
+  --color-gold-light: #fdf5d3; /* 香檳金高光 */
+  --color-gold-dark: #a68b44; /* 青銅暗金 */
+
+  --color-blue-deep: #0f111a; /* 深邃宇宙黑藍 */
+  --color-blue-mid: #1e2130; /* 介面背景色 */
+  --color-blue-accent: #5e81ac; /* 點綴藍 */
+
+  --color-red-destruction: #bf3f3f; /* 毀滅紅 */
+  --color-red-glow: #e06c75;
+
+  --color-green-organic: #98c379; /* 生命綠 */
+  --color-cyan-memory: #56b6c2; /* 記憶青 */
+
+  --color-white: #dcdfe4; /* 類大理石白 */
+  --color-gray: #5c6370;
+
+  /* 字體 */
+  --font-main: "Noto Sans TC", "Segoe UI", sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  --font-mono: "Consolas", "Source Code Pro", monospace;
+
+  /* 動畫 */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.4s ease;
+  --transition-slow: 0.8s ease;
+
+  /* 尺寸 */
+  --border-radius: 4px; /* 更銳利的邊角，符合古典科幻感 */
+  --glassmorphism-blur: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: #050508;
+  background-image:
+    radial-gradient(
+      1px 1px at 10% 10%,
+      rgba(255, 255, 255, 0.8) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      1px 1px at 20% 20%,
+      rgba(255, 255, 255, 0.6) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      2px 2px at 30% 30%,
+      rgba(255, 255, 255, 0.7) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      1px 1px at 40% 40%,
+      rgba(255, 255, 255, 0.5) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      2px 2px at 50% 50%,
+      rgba(255, 255, 255, 0.9) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      1px 1px at 60% 60%,
+      rgba(255, 255, 255, 0.6) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      2px 2px at 70% 70%,
+      rgba(255, 255, 255, 0.7) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      1px 1px at 80% 80%,
+      rgba(255, 255, 255, 0.5) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      1px 1px at 90% 90%,
+      rgba(255, 255, 255, 0.8) 1px,
+      transparent 0
+    ),
+    radial-gradient(
+      circle at 50% 0%,
+      #2c3040 0%,
+      var(--color-blue-deep) 60%,
+      #050508 100%
+    );
+  background-size:
+    550px 550px,
+    350px 350px,
+    250px 250px,
+    150px 150px,
+    450px 450px,
+    300px 300px,
+    200px 200px,
+    100px 100px,
+    500px 500px,
+    100% 100%;
+  color: var(--color-white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ═══ 玻璃擬態面板 ═══ */
+.glass-panel {
+  background: rgba(26, 42, 74, 0.6);
+  backdrop-filter: blur(var(--glassmorphism-blur));
+  -webkit-backdrop-filter: blur(var(--glassmorphism-blur));
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: var(--border-radius);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ═══ 金色發光文字 ═══ */
+.gold-text {
+  color: var(--color-gold);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ═══ 進度條基礎 ═══ */
+.progress-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-gold-dark),
+    var(--color-gold),
+    var(--color-gold-light)
+  );
+  border-radius: 4px;
+  transition: width var(--transition-normal);
+  position: relative;
+}
+
+.progress-bar-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ═══ 故障/回捲特效 ═══ */
+@keyframes glitch {
+  0%,
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0);
+  }
+  20% {
+    clip-path: inset(20% 0 60% 0);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    clip-path: inset(40% 0 40% 0);
+    transform: translate(2px, -2px);
+  }
+  60% {
+    clip-path: inset(60% 0 20% 0);
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    clip-path: inset(80% 0 0% 0);
+    transform: translate(1px, -1px);
+  }
+}
+
+.glitch-effect {
+  animation: glitch 0.3s infinite;
+}
+
+/* ═══ 脈動動畫 ═══ */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* ═══ 旋轉動畫 ═══ */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 20s linear infinite;
+}
+
+/* ═══ 按鈕樣式 ═══ */
+.btn {
+  padding: 12px 24px;
+  border: 1px solid var(--color-gold);
+  background: transparent;
+  color: var(--color-gold);
+  font-family: var(--font-main);
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: var(--color-gold);
+  color: var(--color-blue-deep);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: var(--color-blue-deep);
+}
+
+.btn-danger {
+  border-color: var(--color-red-destruction);
+  color: var(--color-red-destruction);
+}
+
+.btn-danger:hover {
+  background: var(--color-red-destruction);
+  color: var(--color-white);
+  box-shadow: 0 0 20px rgba(192, 57, 43, 0.5);
+}
+
+/* ═══ 滾動條樣式 ═══ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-blue-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
